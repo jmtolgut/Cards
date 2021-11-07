@@ -20,13 +20,13 @@ const cards = [
     url:"https://www.instagram.com/?hl=es",
     parrafo:"Visit Instagram"
   },
-  {
-    id: "3",
-    title: "infojobs",
-    imagen: imagen3,
-    url:"https://www.infojobs.net/",
-    parrafo:"Visit Infojobs"
-  },
+  // {
+  //   id: "3",
+  //   title: "infojobs",
+  //   imagen: imagen3,
+  //   url:"https://www.infojobs.net/",
+  //   parrafo:"Visit Infojobs"
+  // },
 ];
 
 function Cards() {
