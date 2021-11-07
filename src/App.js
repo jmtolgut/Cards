@@ -3,8 +3,7 @@ import Cards from './components/Cards'
 import "./App.css"
 function App() {
   return (
-// test
-    
+    // buenas tardes
     <div className = "App">
       <Cards/>
     </div>
