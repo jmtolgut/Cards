@@ -1,41 +1,57 @@
 import React from "react";
 import Card from "./Card";
-import imagen1 from "../assets/image1.jpeg";
-import imagen2 from "../assets/image2.jpeg";
-import imagen3 from "../assets/image3.jpeg";
+import Google from "../assets/Google.jpg";
+import Github from "../assets/Github.jpg";
+import Infojobs from "../assets/Infojobs.jpg";
+import Linkedin from "../assets/Linkedin.jpg";
 
 const cards = [
   {
     id: "1",
     title: "Google",
-    imagen: imagen1,
+    imagen: Google,
     url:"https://www.google.es/",
     parrafo:"Visit Google"
     
   },
   {
     id: "2",
-    title: "Instagram",
-    imagen: imagen2,
-    url:"https://www.instagram.com/?hl=es",
-    parrafo:"Visit Instagram"
+    title: "Github",
+    imagen: Github,
+    url:"https://github.com/jmtolgut",
+    parrafo:"My Github Profile"
   },
   {
     id: "3",
     title: "infojobs",
-    imagen: imagen3,
-    url:"https://www.infojobs.net/",
-    parrafo:"Visit Infojobs"
+    imagen: Infojobs,
+    url:"http://www.infojobs.net/josemanuel-toledo-gutierrez.prf",
+    parrafo:"My Infojobs Profile"
+  },
+  {
+    id: "4",
+    title: "Linkedin",
+    imagen: Linkedin,
+    url:"https://www.linkedin.com/in/jos%C3%A9-manuel-toledo-guti%C3%A9rrez-9659541b3/",
+    parrafo:"My Linkedin Profile"
   },
 ];
 
 function Cards() {
   return (
-    <div className="container d-flex justify-content-center align-items-center h-100  ">
+    <div className="container d-flex justify-content-center align-items-center h-100 ">
       <div className="row">
         {cards.map((card) => (
-          <div className="col-md-4" key={card.id}>
-            <Card title={card.title} imageSource={card.imagen} enlaceUrl={card.url} textContent={card.parrafo}/>
+          <div 
+          className="col-6 g-4" 
+          key={card.id}
+          >
+            <Card 
+            title={card.title} 
+            imageSource={card.imagen} 
+            enlaceUrl={card.url} 
+            textContent={card.parrafo}
+            />
             
           </div>
         ))}
